@@ -7,7 +7,7 @@ const log = require('simple-node-logger').createSimpleLogger(logOptions);
 require('dotenv').config()
 
 const app = express()
-const port = 5001;
+const port = 5000;
 
 app.get('/cities', (req, res) => {
     const { name } = req.query;

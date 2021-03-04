@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "startAll": "concurrently \"npm start\" \"cd client && npm start \""
+    "startAll": "concurrently \"npm start\" \"cd client && npm run build \""
   },
   "repository": {
     "type": "git",
