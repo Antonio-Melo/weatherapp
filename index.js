@@ -42,4 +42,4 @@ app.get('/weather', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`Server running on ${port}...`));
+//app.listen(port, () => console.log(`Server running on ${port}...`));
