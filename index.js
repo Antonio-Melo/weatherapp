@@ -7,7 +7,7 @@ const log = require('simple-node-logger').createSimpleLogger(logOptions);
 require('dotenv').config()
 
 const app = express()
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.get('/cities', (req, res) => {
     const { name } = req.query;
@@ -42,4 +42,4 @@ app.get('/weather', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log("Server started..."));
+app.listen(port, () => console.log(`Server running on ${port}...`));
