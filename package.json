@@ -4,9 +4,8 @@
   "description": "GoContact Challenge API",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "startAll": "concurrently \"npm start\" \"cd client && npm run build \""
+    "server": "node index.js",
+    "start": "concurrently \"node index.js\" \"cd client && npm run start \""
   },
   "repository": {
     "type": "git",
