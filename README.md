@@ -22,6 +22,14 @@ Given a list of ids of cities (ids from the API above) returns the weather info.
 /weather?ids=123,423,1532
 ```
 
+Every request to any of this endpoints is saved in a file called "requests.log" like
+
+```log
+2021-03-04 22:53:57.204 INFO  /cities with name "Porto" 
+2021-03-04 22:53:57.204 INFO  /cities with name "Faro" 
+2021-03-04 22:53:58.302 INFO  /weather with ids "2735943,2732438,2742611,2268339" 
+```
+
 ## Pictures
 
 ![Picture 1](https://i.ibb.co/1qpvvtN/Screenshot-2021-03-04-at-23-36-01.png)
