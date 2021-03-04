@@ -1,0 +1,31 @@
+{
+  "name": "gocontactchallengeapi",
+  "version": "1.0.0",
+  "description": "GoContact Challenge API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "startAll": "concurrently \"npm start\" \"cd client && npm start \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antonio-Melo/gocontactchallenge.git"
+  },
+  "author": "António Melo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Antonio-Melo/gocontactchallenge/issues"
+  },
+  "homepage": "https://github.com/Antonio-Melo/gocontactchallenge#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "simple-node-logger": "^18.12.24"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
